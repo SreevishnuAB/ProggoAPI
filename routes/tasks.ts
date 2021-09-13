@@ -1,11 +1,10 @@
-import express from 'express';
-const router = express.Router();
+import express, { Request, Response, Router } from 'express';
+import { Task } from '../types/task';
 
-router.post((req, res)=>{
-  /**
-   * expected body: {
-   * name: string (required)
-   * category: string 
-   * }
-   */
+const router: Router = express.Router();
+
+router.post("/", (req: Request<{}, {}, Task>, res: Response)=>{
+  
 });
+
+module.exports = router;

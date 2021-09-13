@@ -2,12 +2,11 @@
   "name": "proggoapi",
   "version": "0.0.0",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
     "prestart": "npm run build",
     "start": "node dist/app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.ts"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
